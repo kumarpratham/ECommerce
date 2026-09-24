@@ -210,7 +210,7 @@ Passwords are never stored as plain text.
 ## 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/kumarpratham/ECommerce
 cd ECommerce
 ```
 
