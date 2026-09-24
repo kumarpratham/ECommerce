@@ -1,0 +1,34 @@
+# GET http://localhost:8000/
+
+### Health Check
+GET http://127.0.0.1:8000/api/health
+
+
+### MongoDB Test
+GET http://127.0.0.1:8000/api/db-test
+
+
+### Register
+POST http://127.0.0.1:8000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Pratham",
+  "email": "pratham@example.com",
+  "password": "password123"
+}
+
+
+### Login
+POST http://127.0.0.1:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "pratham@example.com",
+  "password": "password123"
+}
+
+
+### Current User
+GET http://127.0.0.1:8000/api/auth/me
+Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWI0YjNmMGNhZjhiNjVhMGQzN2Y3NWEiLCJleHAiOjE3OTAyMzExODZ9.vuJ_9IkAQexr5tj4VlyAgxKptL71pKiV0qjEO4Bkitw"
